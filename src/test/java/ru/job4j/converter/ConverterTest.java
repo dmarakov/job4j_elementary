@@ -13,7 +13,7 @@ public class ConverterTest {
         float expected = 2;
         float eps = 0.0001f;
         float out = Converter.rubleToEuro(in);
-        Assert.assertEquals(expected,out,eps);
+        Assert.assertEquals(expected, out, eps);
     }
 
     @Test
@@ -22,6 +22,6 @@ public class ConverterTest {
         float expected = 3;
         float eps = 0.0001f;
         float out = Converter.rubleToDollar(in);
-        Assert.assertEquals(expected,out,eps);
+        Assert.assertEquals(expected, out, eps);
     }
 }
