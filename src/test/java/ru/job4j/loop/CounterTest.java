@@ -15,7 +15,16 @@ public class CounterTest {
     }
 
     @Test
-    public void whenSumNotEvenNumbersFromOneToTenThenThirty() {
+    public void whenSumEvenNumbersFromTenToTwentyThenNinety() {
+        int start = 10;
+        int finish = 20;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 90;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenSumNumbersFromOneToTenThenFiftyFive() {
         int start = 1;
         int finish = 10;
         int result = Counter.sum(start, finish);
