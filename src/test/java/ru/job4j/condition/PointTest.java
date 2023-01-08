@@ -23,11 +23,11 @@ public class PointTest {
     }
 
     @Test
-    public void when42to24then2Dot82() {
-        Point point1 = new Point(4, 2);
-        Point point2 = new Point(2, 4);
-        double expected = 2.82;
-        double out = point1.distance(point2);
+    public void when246to000then4Dot47() {
+        Point point1 = new Point(2, 4, 6);
+        Point point2 = new Point(0, 0, 0);
+        double expected = 7.48;
+        double out = point1.distance3d(point2);
         Assert.assertEquals(expected, out, 0.01);
     }
 
