@@ -13,4 +13,11 @@ public class FactTest {
                 () -> new Fact().calc(-1));
         assertThat(exception.getMessage()).isEqualTo("N could not be less then ");
     }
+
+    @Test
+    public void whenN3Rsl6() {
+        int rsl = new Fact().calc(3);
+        int expected = 6;
+        assertThat(rsl).isEqualTo(expected);
+    }
 }
