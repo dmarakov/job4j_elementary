@@ -11,10 +11,7 @@ public class PasswordValidator {
             throw new IllegalArgumentException("Password should be length [8, 32]");
         }
         char[] chars = password.toCharArray();
-        boolean numberFlag = false;
-        boolean capitalFlag = false;
-        boolean lowerCaseFlag = false;
-        boolean specialFlag = false;
+        boolean numberFlag = false, capitalFlag = false, lowerCaseFlag = false, specialFlag = false;
         for (int i = 0; i < chars.length; i++) {
             if (Character.isDigit(chars[i])) {
                 numberFlag = true;
